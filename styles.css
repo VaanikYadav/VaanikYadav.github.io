@@ -12,11 +12,9 @@ body{
     width: auto;
     height: auto;
 }
-.background{
-    object-fit: cover;
-}
 
-.background div{
+#ellipse{
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -133,7 +131,7 @@ background: radial-gradient(50% 50% at 50% 50%, #0027B0 0%, #0038FF 100%);
 /* FOOTER CONTAINING COPYRIGHT TEXT */
 .footer{
 
-    position: fixed;
+    position: fixe;
     left: 0px;
     bottom: 0px;
     width: 100%;
@@ -143,6 +141,7 @@ background: radial-gradient(50% 50% at 50% 50%, #0027B0 0%, #0038FF 100%);
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 .footer div{
     align-self: center;
