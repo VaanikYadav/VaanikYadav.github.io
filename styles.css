@@ -11,8 +11,6 @@ body{
     background-color: #012CC6;
     width: auto;
     height: auto;
-    display: grid;
-    grid-template-rows: 95vh 5vh;
 }
 .background{
     object-fit: cover;
@@ -95,6 +93,8 @@ background: radial-gradient(50% 50% at 50% 50%, #0027B0 0%, #0038FF 100%);
     align-self: center;
     padding: 0px;
     gap: 24px;
+    position: fixed;
+    top: 45%;
 }
 .main div{
     display:grid;
@@ -133,7 +133,7 @@ background: radial-gradient(50% 50% at 50% 50%, #0027B0 0%, #0038FF 100%);
 /* FOOTER CONTAINING COPYRIGHT TEXT */
 .footer{
 
-    position: absolute;
+    position: fixed;
     left: 0px;
     bottom: 0px;
     width: 100%;
@@ -143,7 +143,6 @@ background: radial-gradient(50% 50% at 50% 50%, #0027B0 0%, #0038FF 100%);
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 }
 .footer div{
     align-self: center;
