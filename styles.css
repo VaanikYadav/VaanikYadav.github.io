@@ -6,78 +6,32 @@ body{
     position: relative;
     width: 1440px;
     height: 1024px;
-
-
-    background-color: #012CC6;
+    background-color: white;
     width: auto;
     height: auto;
 }
 
-#ellipse{
-    object-fit: cover;
-    border-radius: 50%;
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
 }
-
-.ellipse3{
-
-    position: fixed;
-width: 2197.5px;
-height: 2197.5px;
-left: 145px;
-top: -577px;
-
-background: radial-gradient(50% 50% at 50% 50%, #000515 0%, #0038FF 100%);
+.background img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
 }
-.ellipse2{
-
-    position: fixed;
-width: 1799.49px;
-height: 1799.49px;
-left: 544px;
-top: -378px;
-
-background: radial-gradient(50% 50% at 50% 50%, #000515 0%, #0038FF 100%);
+.background{
+    animation: vertical-shaking 5s ease infinite;
 }
-.ellipse1{
-
-    position: fixed;
-width: 1384.59px;
-height: 1384.59px;
-left: 935px;
-top: -171px;
-
-background: radial-gradient(50% 50% at 50% 50%, #0027B0 0%, #0038FF 100%);
+@keyframes vertical-shaking {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(5px) }
+    50% { transform: translateY(-5px) }
+    75% { transform: translateY(5px) }
+    100% { transform: translateY(0) }
 }
-
-
-
-/* ANIMATION */
-.ellipse3 {
-    animation: shake 20s ease infinite;
-  }
-  @keyframes shake {
-      0%, 100% {transform: translateX(0);}
-      10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-      20%, 40%, 60%, 80% {transform: translateX(10px);}
-  }
-
-.ellipse2 {
-    animation: shake 16s ease infinite;
-}
-@keyframes shake {
-      0%, 100% {transform: translateX(0);}
-      10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-      20%, 40%, 60%, 80% {transform: translateX(10px);}
-}
-
-.ellipse1 {
-    animation: shake 12s ease infinite;
-  }
-  @keyframes shake {
-      0%, 100% {transform: translateX(0);}
-      10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-      20%, 40%, 60%, 80% {transform: translateX(10px);}
-  }
 
 /* LOADING LOGO ROTATING */
 .main{
@@ -148,9 +102,9 @@ background: radial-gradient(50% 50% at 50% 50%, #0027B0 0%, #0038FF 100%);
 }
 .footer b{
 
-    font-family: 'Inter', sans-serif;
+    font-family: 'SF Pro';
     font-style: normal;
-    font-weight: 590;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: rgba(255, 255, 255, 0.5);
